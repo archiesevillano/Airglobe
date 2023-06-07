@@ -1,0 +1,15 @@
+.roundButton {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 10px;
+    width: 200px;
+    text-align: center;
+    font-family: var(--text);
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translateY(30px);
+    color: var(--fade);
+    letter-spacing: 3px;
+}

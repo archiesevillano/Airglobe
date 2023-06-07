@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;600;700&family=Playfair:wght@300;400;500;600;700&family=Raleway:wght@300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;600;700&family=Playfair:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;600;700;800;900&display=swap');
 
 :root {
   /* theme colors */
@@ -12,6 +12,7 @@
   --navs: 'Josefin Sans', sans-serif;
   --titles: 'Raleway', sans-serif;
   --subhead: 'Playfair', serif;
+  --text: 'Poppins', sans-serif;
 
 }
 
