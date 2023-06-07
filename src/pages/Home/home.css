@@ -1,0 +1,72 @@
+.home-page {
+    width: 100%;
+    height: 100%;
+}
+
+.home-hero {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-hero .content-center {
+    color: var(--clean);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-hero .content-center h1 {
+    font-family: var(--navs);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 50px !important;
+    letter-spacing: 25px;
+}
+
+.home-hero .content-center p {
+    font-family: var(--navs);
+    text-transform: uppercase;
+    font-size: 20px !important;
+}
+
+.home-hero .earth-bg {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background: none;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    filter: brightness(50%) contrast(110%);
+    display: block;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+        filter: brightness(50%) contrast(110%);
+    }
+
+    50% {
+        transform: translateY(10px);
+        filter: brightness(40%) contrast(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: brightness(50%) contrast(110%);
+    }
+}

@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;600;700&family=Playfair:wght@300;400;500;600;700&family=Raleway:wght@300;500;600;700;800;900&display=swap');
+
+:root {
+  /* theme colors */
+  --primary: #6ee2bc;
+  --secondary: #030303;
+  --tertiary: #70c1da;
+
+  --clean: #f8f8f8;
+  --fade: #1d1c1c;
+
+  --navs: 'Josefin Sans', sans-serif;
+  --titles: 'Raleway', sans-serif;
+  --subhead: 'Playfair', serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary) !important;
 }
