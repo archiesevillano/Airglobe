@@ -1,6 +1,5 @@
 .header-navigation {
     display: flex;
-    justify-content: space-between;
     padding: 10px 50px;
     align-items: center;
     position: fixed;
@@ -9,9 +8,20 @@
     z-index: 2;
 }
 
+.header-navigation .hamburger-icon {
+    outline: none;
+    color: var(--clean);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    transform: translateY(-3px);
+}
+
 .header-nav-list {
     padding: 0;
     list-style-type: none;
+    white-space: nowrap;
 }
 
 .header-nav-list li {
@@ -97,4 +107,132 @@
 
 .about-dropdown-list li a:hover {
     background-color: #242424;
+}
+
+
+/* AppHeader Side Nav Section */
+
+.app-header-side-nav {
+    transition: all 0.4s ease-in-out;
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--trans);
+    z-index: 10;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transform-origin: right;
+}
+
+.app-header-side-nav .fa-solid.fa-xmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    color: var(--clean);
+    font-size: 17px;
+    cursor: pointer;
+    z-index: 11;
+    padding: 15px;
+    display: inline-block;
+    opacity: 0.3;
+}
+
+.app-header-side-nav .fa-solid.fa-xmark:hover {
+    opacity: 1;
+}
+
+.app-header-side-nav .fa-solid.fa-xmark:active {
+    filter: brightness(20%);
+}
+
+.app-header-side-nav .topic-nav li {
+    display: block;
+}
+
+.app-header-side-nav .topic-nav li a:hover {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+.app-header-side-nav .side-nav-hero {
+    height: 20vh;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/airglobe-7d703.appspot.com/o/sidenav.jpg?alt=media&token=195d1baf-0379-4432-89f5-422fdc3f0a2a);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--clean);
+}
+
+.app-header-side-nav .side-nav-hero .header-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%);
+    padding: 10px 20px;
+}
+
+.app-header-side-nav .side-nav-hero h1 {
+    margin: 0 !important;
+}
+
+.app-header-side-nav .side-nav-hero p {
+    backdrop-filter: brightness(150%);
+    margin: 0 !important;
+    font-size: 12px;
+    color: var(--clean);
+    padding: 2px 7px;
+    text-align: right;
+}
+
+.app-header-side-nav .topic-nav {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.app-header-side-nav .topic-nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    padding-top: 30px;
+    padding-left: 20px;
+    transition: all 0.2s ease-in-out;
+    color: var(--clean);
+}
+
+.app-header-side-nav .page-nav {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.app-header-side-nav .page-nav li a {
+    color: var(--clean);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--navs);
+    cursor: pointer;
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--fade);
+    font-size: 13px;
+}
+
+.app-header-side-nav .page-nav li a.active {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+@media (max-width: 400px) {
+    .header-navigation {
+        padding: 10px;
+    }
 }
