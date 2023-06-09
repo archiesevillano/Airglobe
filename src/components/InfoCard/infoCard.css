@@ -1,0 +1,129 @@
+.info-card {
+    flex-shrink: 0;
+    max-width: 300px;
+    min-width: 250px;
+    background: var(--content-bg);
+    overflow: hidden;
+    min-height: 550px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    padding-bottom: 50px;
+    margin: 0 !important;
+}
+
+.info-card .info-card-title {
+    color: var(--clean);
+    font-size: 14px;
+    font-family: var(--text);
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+}
+
+.info-card .info-card-hero {
+    height: 20vh;
+}
+
+.info-card .info-card-hero .info-card-hero-image {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info-card .more-article {
+    transition: all 0.5s ease-in-out;
+    background-color: var(--tertiary);
+    padding: 0px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-card .more-article.visible {
+    padding: 20px;
+    height: 420px;
+}
+
+.info-card .more-article .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.info-card .more-article .content .info-card-article-content {
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+.info-card .info-card-article {
+    position: relative;
+    padding: 20px;
+    padding-top: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.info-card .info-card-article-content {
+    color: var(--clean);
+    font-family: var(--text);
+    font-weight: 300;
+    font-size: 13px;
+    text-align: justify;
+    transition: all 0.5s ease-in-out;
+}
+
+.info-card .info-card-article .article-btn {
+    box-shadow: 13px 13px 26px #1d1d1dad,
+        -13px -13px 26px #0c0c0c31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    background-color: var(--tertiary);
+    color: var(--clean);
+}
+
+.info-card .article-source {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 15px 15px;
+    background-color: var(--fade);
+    margin: 0 !Important;
+}
+
+.info-card .article-source a {
+    color: #927fd4;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-card .article-source i {
+    margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+    .info-card {
+        max-width: 500px;
+        min-height: 550px;
+    }
+
+    .info-card .info-card-hero {
+        height: 30vh;
+    }
+
+    .info-card .more-article.visible {
+        padding: 20px;
+        height: 300px;
+    }
+}

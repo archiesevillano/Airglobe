@@ -1,6 +1,8 @@
 {
   "short_name": "AirGlobe",
   "name": "AirGlobe",
+  "developerName": "Archie C. Sevillano",
+  "dateCreated": "June 07, 2023",
   "icons": [
     {
       "src": "logo.svg",
