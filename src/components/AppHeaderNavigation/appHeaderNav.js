@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import AppHeaderSideNav from "./appHeaderSideNav";
 
-const AppHeaderNav = () => {
+const AppHeaderNav = ({ scrolled }) => {
 
     const [isOpen, setState] = useState(false);
     const [sideNavState, setSideNavState] = useState(false);  // determines if the floating side nav is showing in the screen or not
@@ -27,7 +27,7 @@ const AppHeaderNav = () => {
     nvItems.splice(1, 0, <AboutDropDown key={"about"} isOpen={isOpen} setState={setState} handleDropDown={handleDropDown} />);
 
     return (
-        <div className="header-navigation justify-content-between justify-content-sm-center justify-content-lg-between flex-row flex-sm-column flex-lg-row">
+        <div style={{ background: scrolled ? "var(--secondary)" : "none" }} className="header-navigation justify-content-between justify-content-sm-center justify-content-lg-between flex-row flex-sm-column flex-lg-row">
             <Brand />
             <div className="hamburger-nav d-sm-none">
                 <button type="button" className="hamburger-icon" onClick={() => setSideNavState(true)}>

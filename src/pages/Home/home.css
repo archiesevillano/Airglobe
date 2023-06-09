@@ -73,6 +73,14 @@
     animation-iteration-count: infinite;
 }
 
+.home-page .persuation-section {
+    padding: 45px;
+}
+
+.home-page .persuation-section h2 {
+    max-width: 850px;
+}
+
 @keyframes floating {
     0% {
         transform: translateY(0);
@@ -89,6 +97,8 @@
         filter: brightness(50%) contrast(110%);
     }
 }
+
+
 
 @media (max-width:592px) {
     .home-hero .content-center h1 {

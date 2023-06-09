@@ -40,6 +40,16 @@ const Contents = {
                     articleSourceName: "NASA.GOV"
                 }
             ]
+        },
+        {
+            articles: [
+                {
+                    heading: "The Urgent Call to Restore Our Earth: Recognizing and Addressing the Devastating Impact of Human Activities",
+                    main: [
+                        "Through our relentless pursuit of progress and comfort, humanity has left a deep and lasting mark on our precious planet. Our actions, driven by short-term gains and indifference, have led to the deterioration of Earth's delicate ecosystems, the depletion of natural resources, and the alteration of our climate. The consequences of our choices are now undeniable: rising temperatures, extreme weather events, deforestation, pollution, and the loss of countless species. We stand at a critical juncture, where we must acknowledge the harm we have inflicted and take urgent action to restore and protect our planet. Together, we hold the power to reverse the damage, to heal the wounds we have caused, and to forge a sustainable future where humanity and nature can coexist harmoniously. Let us unite, with unwavering determination and collective responsibility, to preserve the beauty, resilience, and abundance of Earth for generations to come.",
+                    ],
+                }
+            ]
         }
     ]
 }

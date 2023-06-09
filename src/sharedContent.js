@@ -17,7 +17,8 @@ const SharedContent = ({ children }) => {
     const loadData = () => {
         try {
             const data = Contents;
-            setContents(data?.contents[0]); //invoke the function for getting the content values
+            console.log(data);
+            setContents(data?.contents); //invoke the function for getting the content values
         } catch (error) {
             console.warn(error);
         }
